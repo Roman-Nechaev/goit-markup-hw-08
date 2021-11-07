@@ -28,8 +28,13 @@
 }
 
 .footer-info {
+  // mobil //tab
   margin-bottom: 60px;
-  // mobil
+   // desktop
+   @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+  
 }
 
 .footer-logo {
@@ -79,6 +84,7 @@
   // дисктоп
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 
@@ -218,14 +224,15 @@
 }
 
 .mailing-btn {
-  @media screen and (min-width: 1200px) {
-    margin-left: 10px;
-  }
+ 
 
   //таблетка
   @media screen and (min-width: 768px) {
     display: block;
     margin: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
   display: block;
   margin: auto;

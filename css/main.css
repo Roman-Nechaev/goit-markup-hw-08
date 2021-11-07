@@ -125,7 +125,7 @@ body {
 }
 
 .modal {
-  width: 100%;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   transform: scale(1);
@@ -142,8 +142,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 500px;
-    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    font-size: 36px;
+    line-height: calc(42 / 36);
   }
 }
 
@@ -588,6 +594,8 @@ body {
 }
 
 .header {
+  border: none;
+  border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -747,7 +755,6 @@ body {
 }
 
 .bg-banner {
-  max-width: 480px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -767,7 +774,6 @@ body {
 @media screen and (min-width: 1200px) {
   .bg-banner {
     max-width: 1600px;
-    height: 100%;
   }
 }
 
@@ -848,6 +854,10 @@ body {
   }
 }
 
+.studio-list {
+  margin-top: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .studio-list {
     display: flex;
@@ -864,6 +874,10 @@ body {
     justify-content: center;
     margin-left: -30px;
   }
+}
+
+.studio-cart {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1089,12 +1103,6 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .clients-title {
-    margin-bottom: 50px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
@@ -1133,6 +1141,12 @@ body {
 
 .footer-info {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-logo {
@@ -1181,6 +1195,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-text-icon {
     margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1320,16 +1335,16 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1200px) {
-  .mailing-btn {
-    margin-left: 10px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .mailing-btn {
     display: block;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-btn {
+    margin-left: 12px;
   }
 }
 
